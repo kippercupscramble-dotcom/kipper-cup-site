@@ -6,3 +6,6 @@ README.txt
 
 # Superseded by the optimized .jpg — kept locally, not deployed
 assets/photos/the-kipper-cup-trophy.png
+
+# Deploy notes, not site content
+DEPLOY.md
