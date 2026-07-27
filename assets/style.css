@@ -264,35 +264,45 @@ ul.flag-list svg{width:18px; height:18px; margin-top:3px; flex-shrink:0;}
   border-radius:var(--radius); box-shadow:var(--shadow);
 }
 
-/* ---------- photo grid (gallery) ---------- */
+/* ---------- photo gallery (masonry) ---------- */
 .photo-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));
-  gap:16px;
+  column-count:4;
+  column-gap:14px;
 }
 .photo-grid img{
-  width:100%; aspect-ratio:4/3; object-fit:cover; display:block;
+  width:100%; display:block;
+  margin:0 0 14px;
+  break-inside:avoid; -webkit-column-break-inside:avoid; page-break-inside:avoid;
   border-radius:10px; box-shadow:var(--shadow);
-  transition:transform .2s ease;
+  transition:transform .18s ease, box-shadow .18s ease;
 }
-.photo-grid img:hover{transform:scale(1.02);}
-@media(max-width:640px){
-  .photo-grid{grid-template-columns:repeat(2,1fr); gap:10px;}
+.photo-grid img:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 26px rgba(0,0,0,.22);
 }
+@media(max-width:1000px){ .photo-grid{column-count:3;} }
+@media(max-width:700px){  .photo-grid{column-count:2; column-gap:10px;}
+                          .photo-grid img{margin-bottom:10px;} }
+@media(max-width:400px){  .photo-grid{column-count:1;} }
 
 /* ---------- sponsor logos ---------- */
 .sponsor-logos{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(200px, 240px));
-  gap:24px;
+  display:flex;
+  flex-wrap:wrap;
   justify-content:center;
+  gap:24px;
 }
 .sponsor-logo{
-  background:#fff; border-radius:var(--radius); box-shadow:var(--shadow);
-  padding:22px; display:flex; align-items:center; justify-content:center;
-  min-height:150px;
+  flex:0 0 260px;
+  background:#fff;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  aspect-ratio:640/280;
+  display:flex; align-items:center; justify-content:center;
+  overflow:hidden;
 }
-.sponsor-logo img{max-width:100%; max-height:110px; object-fit:contain; display:block;}
+.sponsor-logo img{width:100%; height:100%; object-fit:contain; display:block;}
+@media(max-width:640px){ .sponsor-logo{flex:0 0 220px;} }
 
 /* ---------- sponsor tiers ---------- */
 .tier-badge{
