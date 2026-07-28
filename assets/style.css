@@ -147,6 +147,32 @@ nav.main-nav a:hover{
     url('photos/hero-banner.jpg') center 42% / cover no-repeat;
   padding:96px 0 88px;
 }
+/* Per-page photo ribbons. Each sets its own image + focal point;
+   the overlay, type colours and padding come from .hero-photo. */
+.hero.hero-about{
+  background:
+    linear-gradient(180deg, rgba(8,18,14,.70) 0%, rgba(8,18,14,.46) 45%, rgba(8,18,14,.70) 100%),
+    url('photos/about-banner.jpg') center 40% / cover no-repeat;
+  padding:88px 0 76px;
+}
+.hero.hero-rules{
+  background:
+    linear-gradient(180deg, rgba(8,18,14,.66) 0%, rgba(8,18,14,.38) 45%, rgba(8,18,14,.66) 100%),
+    url('photos/rules-banner.jpg') center 50% / cover no-repeat;
+  padding:88px 0 76px;
+}
+.hero.hero-sponsors{
+  background:
+    linear-gradient(180deg, rgba(8,18,14,.68) 0%, rgba(8,18,14,.42) 45%, rgba(8,18,14,.70) 100%),
+    url('photos/sponsors-banner.jpg') center 55% / cover no-repeat;
+  padding:88px 0 76px;
+}
+/* Sponsors hero carries a paragraph of body copy too */
+.hero.hero-photo p{
+  color:#f2ece2;
+  text-shadow:0 1px 10px rgba(0,0,0,.8);
+}
+
 /* Past Champions ribbon — the 2026 awards table */
 .hero.hero-champions{
   background:
