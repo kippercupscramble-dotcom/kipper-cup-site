@@ -290,6 +290,18 @@ ul.flag-list svg{width:18px; height:18px; margin-top:3px; flex-shrink:0;}
   transform:translateY(-3px);
   box-shadow:0 12px 30px rgba(0,0,0,.24);
 }
+/* Wide collage strip that closes the gallery.
+   Capped at its native 1216px so it never upscales and softens. */
+.gallery-banner{margin-top:4px;}
+.gallery-banner img{
+  width:100%;
+  max-width:1216px;
+  margin:0 auto;
+  display:block;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
 @media(min-width:2100px){ .photo-grid{column-count:6;} }
 @media(min-width:1700px) and (max-width:2099px){ .photo-grid{column-count:5;} }
 @media(max-width:1280px){ .photo-grid{column-count:3;} }
