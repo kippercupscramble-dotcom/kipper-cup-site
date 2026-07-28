@@ -136,6 +136,28 @@ nav.main-nav a:hover{
   padding:64px 0 56px;
   text-align:center;
 }
+/* Photo hero — full-bleed image behind the title */
+.hero.hero-photo{
+  position:relative;
+  background:
+    linear-gradient(rgba(15,32,26,.68), rgba(15,32,26,.58)),
+    url('photos/hero-banner.jpg') center 42% / cover no-repeat;
+  padding:96px 0 88px;
+}
+.hero.hero-photo .eyebrow{color:var(--cream);}
+.hero.hero-photo h1{
+  color:#fff;
+  text-shadow:0 2px 18px rgba(0,0,0,.45);
+}
+.hero.hero-photo .tagline{color:var(--cream);}
+.hero.hero-photo .fact-pill{
+  background:rgba(255,255,255,.94);
+  border-color:rgba(255,255,255,.35);
+}
+@media(max-width:700px){
+  .hero.hero-photo{padding:64px 0 56px;}
+}
+
 .hero .eyebrow{
   color:var(--rust);
   font-weight:700;
