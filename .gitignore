@@ -9,3 +9,6 @@ assets/photos/the-kipper-cup-trophy.png
 
 # Deploy notes, not site content
 DEPLOY.md
+
+# Upscayl outputs — working files, often hundreds of MB. Keep them out of the repo.
+*upscayl*
