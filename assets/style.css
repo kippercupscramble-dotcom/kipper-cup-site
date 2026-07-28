@@ -140,16 +140,25 @@ nav.main-nav a:hover{
 .hero.hero-photo{
   position:relative;
   background:
-    linear-gradient(rgba(15,32,26,.68), rgba(15,32,26,.58)),
+    linear-gradient(180deg,
+      rgba(8,18,14,.74) 0%,
+      rgba(8,18,14,.40) 45%,
+      rgba(8,18,14,.72) 100%),
     url('photos/hero-banner.jpg') center 42% / cover no-repeat;
   padding:96px 0 88px;
 }
-.hero.hero-photo .eyebrow{color:var(--cream);}
+.hero.hero-photo .eyebrow{
+  color:var(--cream);
+  text-shadow:0 1px 8px rgba(0,0,0,.7);
+}
 .hero.hero-photo h1{
   color:#fff;
-  text-shadow:0 2px 18px rgba(0,0,0,.45);
+  text-shadow:0 2px 4px rgba(0,0,0,.55), 0 4px 24px rgba(0,0,0,.6);
 }
-.hero.hero-photo .tagline{color:var(--cream);}
+.hero.hero-photo .tagline{
+  color:var(--cream);
+  text-shadow:0 1px 10px rgba(0,0,0,.7);
+}
 .hero.hero-photo .fact-pill{
   background:rgba(255,255,255,.94);
   border-color:rgba(255,255,255,.35);
