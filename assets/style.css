@@ -163,6 +163,18 @@ nav.main-nav a:hover{
   background:rgba(255,255,255,.94);
   border-color:rgba(255,255,255,.35);
 }
+/* Outline button is green by default — unreadable on the dark photo */
+.hero.hero-photo .btn.btn-outline{
+  color:#fff !important;
+  border-color:#fff;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(2px);
+}
+.hero.hero-photo .btn.btn-outline:hover{
+  background:#fff;
+  color:var(--green) !important;
+  border-color:#fff;
+}
 @media(max-width:700px){
   .hero.hero-photo{padding:64px 0 56px;}
 }
