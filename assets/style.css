@@ -147,6 +147,17 @@ nav.main-nav a:hover{
     url('photos/hero-banner.jpg') center 42% / cover no-repeat;
   padding:96px 0 88px;
 }
+/* Past Champions ribbon — the 2026 awards table */
+.hero.hero-champions{
+  background:
+    linear-gradient(180deg,
+      rgba(8,18,14,.70) 0%,
+      rgba(8,18,14,.42) 45%,
+      rgba(8,18,14,.68) 100%),
+    url('photos/champions-banner.jpg') center 58% / cover no-repeat;
+  padding:88px 0 76px;
+}
+
 .hero.hero-photo .eyebrow{
   color:var(--cream);
   text-shadow:0 1px 8px rgba(0,0,0,.7);
@@ -338,7 +349,7 @@ ul.flag-list svg{width:18px; height:18px; margin-top:3px; flex-shrink:0;}
 .gallery-banner{margin-top:4px;}
 .gallery-banner img{
   width:100%;
-  max-width:1216px;
+  max-width:2400px;
   margin:0 auto;
   display:block;
   border-radius:12px;
